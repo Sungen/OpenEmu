@@ -76,3 +76,15 @@
 [submodule "OpenEmuKit"]
 	path = OpenEmuKit
 	url = ../../OpenEmu/OpenEmuKit.git
+[submodule "XADMaster"]
+	path = Vendor/XADMaster
+	url = https://github.com/MacPaw/XADMaster
+[submodule "UniversalDetector"]
+	path = Vendor/UniversalDetector
+	url = https://github.com/MacPaw/universal-detector
+[submodule "JollyCV"]
+	path = JollyCV
+	url = ../../OpenEmu/JollyCV-Core.git
+[submodule "DeSmuME"]
+	path = DeSmuME
+	url = ../../OpenEmu/DeSmuME-Core.git

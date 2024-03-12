@@ -118,9 +118,9 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.3.3</string>
+	<string>2.4.1</string>
 	<key>CFBundleVersion</key>
-	<string>2.3.3</string>
+	<string>2.4.1</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.games</string>
 	<key>NSPrefersDisplaySafeAreaCompatibilityMode</key>
@@ -156,6 +156,8 @@
 	<string>https://raw.github.com/OpenEmu/OpenEmu-Update/master/appcast.xml</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
+	<key>SUPublicEDKey</key>
+	<string>lI9DtKt5iDVR48ifKaP94mrFrHwYn75bfQLr+0alpRY=</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>

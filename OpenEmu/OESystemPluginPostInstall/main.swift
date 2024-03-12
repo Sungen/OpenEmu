@@ -30,9 +30,16 @@ import Foundation
 
 // IMPORTANT: to be updated when adding a language to OpenEmu
 let regionsToLanguages = [
-    "eu": ["ca", "de", "en-GB", "es", "fr", "it", "nl", "pt", "ru"],
+    "eu": ["ca", "de", "en-GB", "es", "fr", "it", "nl", "pt", "ru", "tr"],
     "na": ["en", "fr-CA"],
-    "jp": ["ja", "zh-Hans", "zh-Hant"]
+    "jp": ["ja", "zh-Hans", "zh-Hant"],
+    "eg": ["ar"],
+    "sa": ["ar"],
+    "ae": ["ar"],
+    "bh": ["ar"],
+    "tn": ["ar"],
+    "dz": ["ar"],
+    "ma": ["ar"]
 ]
 
 // Extensions we don't want to include in the Info.plist because they are
@@ -85,8 +92,7 @@ func readLocalizedInfoPlistStrings(appBundle: Bundle) -> [String: [String: Strin
         let plist = appBundle.resourceURL!.appendingPathComponent(localization + ".lproj/InfoPlist.strings")
         do {
             let data = try Data(contentsOf: plist)
-            var strings = try PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as! [String: String]
-            strings.removeValue(forKey: "%@ Game")
+            let strings = try PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as! [String: String]
             res[localization] = strings
         } catch {
             res[localization] = [:]
